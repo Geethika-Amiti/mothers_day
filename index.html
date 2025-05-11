@@ -2,69 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Mother's Day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mother’s Day</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="book">
-    <!-- First page: Portrait -->
-    <div class="page cover">
-      <h1>Happy Mother’s Day</h1>
-    </div>
 
-    <!-- Second page: Landscape with Image and Text -->
-    <div class="page landscape">
-      <div class="left">
-        <div class="photo-container">
-          <img src="love.jpg" alt="Your Photo" />
+  <!-- Book Container -->
+  <div class="book-container">
+    <div id="flipbook">
+      <!-- First Portrait Cover Page -->
+      <div class="page cover">
+        <h1>Happy Mother’s Day</h1>
+      </div>
+
+      <!-- Middle Landscape Page: Image + Text -->
+      <div class="page landscape">
+        <div class="left">
+          <img src="love.jpg" alt="Mom Photo" />
+        </div>
+        <div class="right">
+          <h2>To the Most Beautiful Soul — My Amma, My Heart</h2>
+          <p>Dear Ma,</p>
+          <p>
+            Happy Mother’s Day, my angel.<br>
+            Today, even though we’re miles apart, your love still wraps around me and thammudu like a warm blanket.<br><br>
+            You’ve been our lighthouse in every storm, a soft place to land when life gets hard.<br><br>
+            We see you.<br>
+            We see the way you give without asking for anything back. We see the way you love — quietly, deeply, endlessly.<br>
+            Even now, you are in a different country, but our hearts beat with yours, always.<br><br>
+            You forgive more than anyone should. You care more than anyone ever does. And still, you smile. Still, you hold strength.<br>
+            That’s not weakness. That’s your superpower, mumma.<br><br>
+            I know today, in the middle of all the celebrations there, your heart may ache for your own children, your own hugs, your own chaos.<br>
+            But please know — you're not alone. Not even for a second.<br><br>
+            Close your eyes, ma, and feel us there — holding your hand, lying next to you, telling you that you’re the best mother in this universe. No one compares.<br><br>
+            Thank you for being our world.<br>
+            And one day, we’ll make sure the world treats you the way you deserve.<br><br>
+            <strong>Forever your little ones,<br>Bujjamma and Kannayya</strong>
+          </p>
         </div>
       </div>
-      <div class="right">
-        <h2>To the Most Beautiful Soul — My Amma, My Heart</h2>
-        <p>Dear Ma,</p>
-        <p>Happy Mother’s Day, my angel.<br>
-        Today, even though we’re miles apart,<br>
-        Your love still wraps around me and thammudu like a warm blanket.<br>
-        You’ve been our lighthouse in every storm,<br>
-        A soft place to land when life gets hard.</p>
-        <p>We see you.<br>
-        We see the way you give without asking for anything back.<br>
-        We see the way you love—quietly, deeply, endlessly.<br>
-        Even now, you are in a different country,<br>
-        But our hearts beat with yours, always.</p>
-        <p>You forgive more than anyone should,<br>
-        You care more than anyone ever does.<br>
-        And still, you smile, still, you hold strength.<br>
-        That’s not weakness. That’s your superpower, mumma.</p>
-        <p>I know today, in the middle of all the celebrations there,<br>
-        Your heart may ache for your own children,<br>
-        Your own hugs, your own chaos.<br>
-        But please know — you're not alone.<br>
-        Not even for a second.</p>
-        <p>Close your eyes, ma, and feel us there —<br>
-        Holding your hand, lying next to you,<br>
-        Telling you that you’re the best mother in this universe.<br>
-        No one compares.</p>
-        <p>Thank you for being our world.<br>
-        And one day, we’ll make sure the world treats you the way you deserve.</p>
-        <p>We love you more than words can ever say.<br>
-        <strong>Forever your little ones,<br>Bujjamma and Kannayya</strong></p>
+
+      <!-- Final Portrait Page -->
+      <div class="page final cover">
+        <p><strong>We love you so much, Ma!</strong><br><br>
+        Look at that gorgeous smile on your face now.<br>
+        All my efforts — from every detail to this page — are simply gifts wrapped in your smile.</p>
       </div>
     </div>
-
-    <!-- Final page: Portrait -->
-    <div class="page final">
-      <p><strong>We love you so much, Ma!</strong><br>
-      Look at that gorgeous smile on your face now.<br>
-      All my efforts are gifts, as you smile!</p>
-    </div>
   </div>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
 
   <!-- Background Music -->
   <audio autoplay loop>
     <source src="background-music-soft-piano-334995.mp3" type="audio/mp3" />
   </audio>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="lib/turn.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
