@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Mother's Day</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="book">
-    <div class="page cover">Happy Mother’s Day</div>
-    <div class="page">
+    <!-- First page: Portrait -->
+    <div class="page cover">
+      <h1>Happy Mother’s Day</h1>
+    </div>
+
+    <!-- Second page: Landscape with Image and Text -->
+    <div class="page landscape">
       <div class="left">
-        <h2>To the Most Beautiful Soul — My Amma, My Heart</h2>
-        <div class="photo-placeholder"></div>
+        <div class="photo-container">
+          <img src="love.jpg" alt="Your Photo" />
+        </div>
       </div>
       <div class="right">
+        <h2>To the Most Beautiful Soul — My Amma, My Heart</h2>
         <p>Dear Ma,</p>
         <p>Happy Mother’s Day, my angel.<br>
         Today, even though we’re miles apart,<br>
@@ -45,14 +53,18 @@
         <strong>Forever your little ones,<br>Bujjamma and Kannayya</strong></p>
       </div>
     </div>
+
+    <!-- Final page: Portrait -->
     <div class="page final">
       <p><strong>We love you so much, Ma!</strong><br>
       Look at that gorgeous smile on your face now.<br>
-      We can’t wait to meet you, Ma.</p>
+      All my efforts are gifts, as you smile!</p>
     </div>
   </div>
+
+  <!-- Background Music -->
   <audio autoplay loop>
-    <source src="background.mp3" type="audio/mpeg" />
+    <source src="background-music-soft-piano-334995.mp3" type="audio/mp3" />
   </audio>
 </body>
 </html>
