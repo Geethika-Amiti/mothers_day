@@ -1,71 +1,77 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom right, #f9d5ec, #f0b6d8, #dab6ff);
+  color: #4a235a;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #fff;
-}
-
-.content {
-  width: 80%;
+.card {
   max-width: 800px;
-  text-align: center;
-  background: #ffffff;
-  padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
 }
 
-.title-page h1 {
-  font-size: 3.5em;
-  color: #9c27b0; /* Dark Pink */
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.title-page p {
-  font-size: 1.5em;
-  color: #666;
-}
-
-.message h2 {
-  color: #d81b60; /* Violet Pink */
-  margin-bottom: 20px;
-}
-
-.message p {
-  font-size: 1.2em;
-  color: #444;
-  line-height: 1.6;
-  margin: 0 0 30px;
-}
-
-.photo img {
-  width: 80%;
-  max-width: 500px;
-  border-radius: 15px;
-  margin-top: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.closing-text h2 {
-  color: #9c27b0; /* Dark Pink */
+.main-title {
   font-size: 2.5em;
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 30px;
 }
 
-.closing-text p {
-  font-size: 1.3em;
-  color: #444;
-  line-height: 1.6;
+.message {
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: justify;
 }
 
-audio {
-  display: none;
+.photo {
+  display: block;
+  margin: 40px auto 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.closing-message {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 30px;
+  color: #880e4f;
+}
+
+.hearts-container::before,
+.hearts-container::after {
+  content: "❤";
+  position: absolute;
+  animation: float 5s infinite ease-in-out;
+  font-size: 2rem;
+  color: #f06292;
+}
+
+.hearts-container::after {
+  left: 80%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 0.6;
+  }
+  100% {
+    top: -10%;
+    opacity: 0;
+  }
 }
