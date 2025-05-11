@@ -1,9 +1,9 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", function () {
   $('#flipbook').turn({
-    width: 900,
-    height: 600,
+    width: '100%',
+    height: '100%',
     autoCenter: true,
     gradients: true,
-    duration: 1500
+    elevation: 50
   });
 });
